@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from tkinter import messagebox, Text
+from tkinter import messagebox, Text, Toplevel
 from caesar import *
 from affine import *
 from playfair import *
@@ -9,7 +9,7 @@ import time
 # WELCOME PAGE
 # ============================================
 def show_welcome():
-    welcome_window = ctk.CTk()
+    welcome_window = Toplevel(app)
     welcome_window.title("Welcome - Multi Cipher Encryption System")
     welcome_window.resizable(True, True)
     
